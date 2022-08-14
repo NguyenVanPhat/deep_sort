@@ -207,8 +207,8 @@ def parse_args():
 
 def main():
     args = parse_args()
-    # encoder = create_box_encoder(args.model, batch_size=32)
-    encoder = create_box_encoder(args.model, batch_size=1)
+    encoder = create_box_encoder(args.model, batch_size=32)
+    # encoder = create_box_encoder(args.model, batch_size=1)
     generate_detections(encoder, args.mot_dir, args.output_dir,
                         args.detection_dir)
 
